@@ -1,0 +1,12 @@
+t=0
+C=['#f6b','#985']
+draw=_=>{createCanvas(W=686,W)
+noStroke(background('#Processing'))
+for(l=2;l--;)
+for(k=15;k--;)
+for(j=9;j--;)
+for(i=3;i--;)
+resetMatrix(fill(C[l])),
+l%2&&rotate(PI/2),
+rect(7*i*(sin(t)+1)+7+j*98-k%2*49,k*49-l%2*W,7,49)
+t+=.03}

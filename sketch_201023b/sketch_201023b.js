@@ -1,0 +1,9 @@
+t=0 
+draw=_=>{createCanvas(W=720,W)
+noStroke(rectMode(CENTER))
+background('#eff')
+fill('#48a')
+for(j=11;j--;)for(i=9;i-->-2;)(g=rect)(x=i*88+j*24,y=-i*24+j*88,v=16*sin(t),v),f(),f(3)
+t+=.01
+}
+f=(r=-3)=>g(r*8+x,y,v,6*v)&g(x,r*8+y,6*v,v)

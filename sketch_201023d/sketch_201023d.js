@@ -1,0 +1,15 @@
+t=0 
+draw=_=>{createCanvas(W=720,W)
+noStroke(background('#124'),fill('#fa1'))
+for(k=16;k--;)for(j=16;j--;){
+push()
+translate((j-k%2/2)*70,k*61)
+s=sin(t)
+for(i=3;i--;){
+  rotate(2.09)
+  quad(4,0,20,0,-3,40*s,-19,40*s)
+}
+pop()
+}
+t+=.01
+}
